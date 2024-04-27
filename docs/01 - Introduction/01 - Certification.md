@@ -1,6 +1,5 @@
 # Certification
 
-
 ## Certification Details
 
    - **`Certified Kubernetes Administrator`**: https://www.cncf.io/certification/cka/
@@ -12,3 +11,10 @@
    - **`Exam Tips`**: http://training.linuxfoundation.org/go//Important-Tips-CKA-CKAD 
 
 #### Use the code - KUBERNETES15 - while registering for the CKA or CKAD exams at Linux Foundation to get a 15% discount.
+
+# CKA Resources
+
+## Kubernetes Cluster 
+
+* local cluster: https://github.com/kubernetes-sigs/kind OR [minikube](https://minikube.sigs.k8s.io/docs/start/) 
+
