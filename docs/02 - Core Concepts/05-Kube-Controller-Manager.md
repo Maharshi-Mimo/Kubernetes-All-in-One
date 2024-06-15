@@ -9,7 +9,7 @@
   - **Replication controller**: It is responsible for monitoring the status of replicasets and ensuring that the desired number of pods are available at all time within the set.
   - **Node Controller**: Responsible for monitoring the state of the Nodes and taking necessary actions to keep the application running.
   - **Endpoints controller**: It creates the Endpoints object, for example, to expose the pod externally we need to join it to a service.
-  - **Namespace controller**: 
+  - **Namespace controller**: Provide a mechanism for isolating groups of resources within a single cluster. Also creates DNS entry in the format `<service-name>.<namespace-name>.svc.cluster.local`
   - **Service account controller**: Responsible for creating default accounts and the API access token.
 
 ## Installing Kube-Controller Manager 
