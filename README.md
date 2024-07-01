@@ -12,3 +12,4 @@ One place to for everything about Kubernetes.
   - [03-ETCD server](/docs/02%20-%20Core%20Concepts/03-ETCD-server.md)
   - [04-Kube-Scheduler](/docs/02%20-%20Core%20Concepts/04-Kube-Scheduler.md)
   - [05-Kube-Controller-Manager](/docs/02%20-%20Core%20Concepts/05-Kube-Controller-Manager.md)
+  - [06-Kube-Proxy](/docs/02%20-%20Core%20Concepts/06-kube-Services.md)
