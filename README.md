@@ -15,4 +15,4 @@ One place to for everything about Kubernetes.
   - [06-Kube-Proxy](/docs/02%20-%20Core%20Concepts/06-kube-Services.md) 
   - [07-Kubelet](/docs/02%20-%20Core%20Concepts/07-Kubelet.md)
 - [03 - Resouces](/docs/03%20-%20Resources/)
-  - [01](/docs/03%20-%20Resources/01-Pod.md)
+  - [01 - Pod ](/docs/03%20-%20Resources/01-Pod.md)
