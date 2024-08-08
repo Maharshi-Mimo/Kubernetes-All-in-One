@@ -23,6 +23,7 @@ Kubernetes Service types allow you to specify what kind of Service you want. The
 - *NodePort*:
   - Exposes the Service on each Node's IP at a static port (the NodePort).
   - Sets up a cluster IP address similar to ClusterIP.
+  ![Node Port](../../images/kubernetes_nodeport.webp)
 
 - *LoadBalancer*:
   - Exposes the Service externally using an external load balancer.
