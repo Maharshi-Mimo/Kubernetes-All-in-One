@@ -28,6 +28,7 @@ Kubernetes Service types allow you to specify what kind of Service you want. The
 - *LoadBalancer*:
   - Exposes the Service externally using an external load balancer.
   - Requires an external load balancer or integration with a cloud provider.
+  ![LoadBalancer](../../images/kubernetes_loadbalancer.webp)
 
 - *ExternalName*:
   - Maps the Service to the contents of the externalName field (e.g., hostname api.foo.bar.example).
