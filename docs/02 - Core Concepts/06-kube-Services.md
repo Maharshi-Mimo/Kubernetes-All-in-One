@@ -34,4 +34,5 @@ Kubernetes Service types allow you to specify what kind of Service you want. The
   - Maps the Service to the contents of the externalName field (e.g., hostname api.foo.bar.example).
   - Configures the cluster's DNS server to return a CNAME record with the external hostname value.
   - No proxying is set up.
+  ![ExternalName](../../images/kubernetes_externalname.webp)
 
