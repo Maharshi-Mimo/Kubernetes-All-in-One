@@ -4,7 +4,11 @@ In this section, we will take a look at **`Namespaces`**
 
 We have created **`Objects`** such as **`PODs`**, **`Deployments`** and **`Services`** in our cluster. Whatever we have been doing we have been doing in a **`NAMESPACE`**.
 
-- There is a **`default`** namespace in kubernetes. It is automatically created when kubernetes is setup initially. 
+- There is a **`default`** namespace in kubernetes where all resouces are deployed unless specified otherwise. It is automatically created when kubernetes is setup initially. It also have **`kube-system`** and **`kube-node-relase`**
+
+- We can create our own namespace using the **`kubectl create namespace`** command.
+
+- Namespace cannot be nested and each resource can only be in one namespace. 
 
 
 - To list the pods in default namespace
