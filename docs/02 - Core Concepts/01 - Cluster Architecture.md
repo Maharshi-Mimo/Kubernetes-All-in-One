@@ -20,3 +20,23 @@ It contains
   - Controller Manager
   - Cloud Controller Manager
 
+## Kubernetes Components 
+
+### Core Component 
+
+- Controlplane Components - manages overall state of the cluster
+  - [Kube-apiserver](/docs/02%20-%20Core%20Concepts/02-Kube-API-Server.md) 
+  - [etcd](/docs/02%20-%20Core%20Concepts/03-ETCD-server.md)
+  - [kube-scheduler](/docs/02%20-%20Core%20Concepts/04-Kube-Scheduler.md)
+  - [kube-controller-manager](/docs/02%20-%20Core%20Concepts/05-Kube-Controller-Manager.md)
+  - [cloud-controller-manager](/docs/02%20-%20Core%20Concepts/)
+
+### Node Components 
+- [Kubelet](/docs/02%20-%20Core%20Concepts/07-Kubelet.md)
+- [Kube-proxy](/docs/02%20-%20Core%20Concepts/) 
+- [Container Runtime](/docs/02%20-%20Core%20Concepts/)
+
+### Addons 
+- [DNS](/docs/02%20-%20Core%20Concepts/)
+- [Container Resource Monitoring](/docs/02%20-%20Core%20Concepts/)
+- [Cluster-level Logging](/docs/02%20-%20Core%20Concepts/)
