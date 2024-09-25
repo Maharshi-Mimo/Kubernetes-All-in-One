@@ -22,6 +22,8 @@ It contains
 
 ## Kubernetes Components 
 
+![Kubernetes Components](images/components-of-kubernetes.svg)
+
 ### Core Component 
 
 - Controlplane Components - manages overall state of the cluster
