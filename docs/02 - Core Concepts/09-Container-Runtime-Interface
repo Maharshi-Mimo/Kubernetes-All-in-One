@@ -15,3 +15,10 @@ repository.
 
 > [!Note] 
 > The old, pre-CRI Docker integration was removed in 1.7.
+
+## Common CRI in Kubernetes
+
+ - [Containerd](https://containerd.io/)
+ - [CRI-O](https://cri-o.io/)
+ - [Docker](https://www.docker.com/)
+ - [Mirantis](https://www.mirantis.com/)
