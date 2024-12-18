@@ -23,3 +23,4 @@ One place to for everything about Kubernetes.
   - [03 - Deployment ](/docs/03%20-%20Resources/03-Deployments.md)
   - [04 - StatefulSet](/docs/03%20-%20Resources/04-StatefulSet.md)
   - [05 - Daemonset](/docs/03%20-%20Resources/05-DaemonSet.md)
+  - [06 - LimitRange & ResourceQuota](/docs/03%20-%20Resources/06-LimitRange_&_ResourceQuota.md)
