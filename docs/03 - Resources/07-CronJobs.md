@@ -8,7 +8,7 @@ kind: CronJob
 metadata:
   name: hello
 spec:
-  schedule: "* * * * *"
+  schedule: "* * * * *"  # minute (0-60) hour (0-60) day-of-month (1-31) month (1-12) day0f-the-week (0-6)
   jobTemplate:
     spec:
       template:
@@ -23,3 +23,6 @@ spec:
             - date; echo Hello from the Kubernetes cluster
           restartPolicy: OnFailure
 ```
+> [!NOTE]
+> Specifying a timezone using CRON_TZ or TZ variables inside .spec.schedule is not officially supported (and never has been).
+> CronJob contains a template for new Jobs. If you modify an existing CronJob, the changes you make will apply to new Jobs that start to run after your modification is complete.
