@@ -22,7 +22,18 @@ spec:
             - -c
             - date; echo Hello from the Kubernetes cluster
           restartPolicy: OnFailure
+  concurrencyPolicy: Allow
+  startingDeadlineSeconds: 60
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
 ```
+# Concurrency Policy
+
+- **Allow** (default): The CronJob allows concurrently running Jobs 
+- **Forbid** : The CronJob does not allow concurrent runs; if it is time for a new Job run and the previous Job run hasn't finished yet, the CronJob skips the new Job run.
+- **Replace**: If it is time for a new Job run and the previous Job run hasn't finished yet, the CronJob replaces the currently running Job run with a new Job run
+
+
 > [!NOTE]
 > Specifying a timezone using CRON_TZ or TZ variables inside .spec.schedule is not officially supported (and never has been).
 > CronJob contains a template for new Jobs. If you modify an existing CronJob, the changes you make will apply to new Jobs that start to run after your modification is complete.
