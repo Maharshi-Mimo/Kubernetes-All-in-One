@@ -24,3 +24,8 @@ One place to for everything about Kubernetes.
   - [04 - StatefulSet](/docs/03%20-%20Resources/04-StatefulSet.md)
   - [05 - Daemonset](/docs/03%20-%20Resources/05-DaemonSet.md)
   - [06 - LimitRange & ResourceQuota](/docs/03%20-%20Resources/06-LimitRange_&_ResourceQuota.md)
+- [04 - Network & Services](/docs/04%20-%20Network%20&%20Services/)
+    - [01 - ClusterIP](/docs/04%20-%20Network%20&%20Services/01-ClusterIP.md)
+- [05 - Storage](/docs/05%20-%20Storage/)
+  - [01 - Volumes](/docs/05%20-%20Storage/01-Volumes.md)
+  - [02 - PersistentVolumeClaim](/docs/05%20-%20Storage/02-PersistentVolumeClaim.md)
