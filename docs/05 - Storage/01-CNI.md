@@ -85,7 +85,7 @@ spec:
 4. **Unmount**: Pod terminates
 5. **Delete**: PVC is deleted
 
-![CSI Lifecycle](../images/csi-lifecycle.png)
+![CSI Lifecycle](/images/csi-lifecycle.png)
 
 ## Popular CSI Drivers
 - AWS EBS CSI driver
