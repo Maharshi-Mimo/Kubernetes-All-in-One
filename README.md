@@ -29,3 +29,6 @@ One place to for everything about Kubernetes.
 - [05 - Storage](/docs/05%20-%20Storage/)
   - [01 - Volumes](/docs/05%20-%20Storage/01-Volumes.md)
   - [02 - PersistentVolumeClaim](/docs/05%20-%20Storage/02-PersistentVolumeClaim.md)
+- [06 - Security](/docs/06%20-%20Security/)
+  - [01 - Kubernetes Security](/docs/06%20-%20Security/01-kubernetes-security.md)
+  - [02 - Authentication](/docs/06%20-%20Security/02-Authentication.md) 
