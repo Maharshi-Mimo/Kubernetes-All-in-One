@@ -26,6 +26,66 @@ rules:
   verbs: ["get", "list", "watch"]
 ```
 
+### Understanding RoleBinding vs ClusterRoleBinding
+
+RoleBinding and ClusterRoleBinding are two distinct ways to bind roles to users in Kubernetes RBAC.
+
+#### Key Differences
+
+| Feature | RoleBinding | ClusterRoleBinding |
+|---------|-------------|-------------------|
+| Scope | Namespace-specific | Cluster-wide |
+| Reference | Can bind Roles or ClusterRoles | Can only bind ClusterRoles |
+| Use Case | Namespace-level access control | Cluster-wide access control |
+| Creation Location | Must be created in a namespace | Created at cluster level |
+
+#### Examples:
+
+1. **RoleBinding Example** (Namespace-scoped):
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: read-pods
+  namespace: development
+subjects:
+- kind: User
+  name: jane
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+```
+
+2. **ClusterRoleBinding Example** (Cluster-wide):
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cluster-admin-binding
+subjects:
+- kind: User
+  name: admin-user
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+#### When to Use Which?
+
+- Use **RoleBinding** when:
+  - Permissions should be limited to specific namespaces
+  - Implementing namespace-level isolation
+  - Managing team-specific resources
+
+- Use **ClusterRoleBinding** when:
+  - Managing cluster-wide resources (nodes, PVs)
+  - Setting up cluster administrators
+  - Configuring cluster-level service accounts
+
 ```yaml
 # Example RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
