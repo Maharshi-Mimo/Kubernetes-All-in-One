@@ -86,22 +86,91 @@ roleRef:
   - Setting up cluster administrators
   - Configuring cluster-level service accounts
 
+### Default ClusterRoles in Kubernetes
+
+Kubernetes comes with several pre-defined ClusterRoles that serve specific purposes:
+
+#### 1. Core ClusterRoles
+
+| ClusterRole | Purpose | Typical Users |
+|-------------|---------|---------------|
+| `cluster-admin` | Superuser access, full control over every resource | Cluster administrators |
+| `admin` | Full access within a namespace | Namespace administrators |
+| `edit` | Read/write access to most resources | Developers |
+| `view` | Read-only access to most resources | Helpdesk, readonly users |
+
+#### 2. Technology-Specific ClusterRoles
+
 ```yaml
-# Example RoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
-metadata:
-  name: read-pods
-  namespace: default
-subjects:
-- kind: User
-  name: jane
-  apiGroup: rbac.authorization.k8s.io
-roleRef:
-  kind: Role
-  name: pod-reader
-  apiGroup: rbac.authorization.k8s.io
+# Examples of specialized ClusterRoles
+- system:node  # Used by kubelets
+- system:kube-scheduler  # Used by scheduler
+- system:kube-controller-manager  # Used by controller manager
+- system:certificates.k8s.io:certificatesigningrequests:nodeclient  # For CSR approval
 ```
+
+#### 3. Common Use Cases
+
+1. **cluster-admin**
+   ```yaml
+   apiVersion: rbac.authorization.k8s.io/v1
+   kind: ClusterRoleBinding
+   metadata:
+     name: ops-cluster-admin
+   subjects:
+   - kind: Group
+     name: ops-team
+     apiGroup: rbac.authorization.k8s.io
+   roleRef:
+     kind: ClusterRole
+     name: cluster-admin
+     apiGroup: rbac.authorization.k8s.io
+   ```
+
+2. **view** (Read-only access)
+   ```yaml
+   apiVersion: rbac.authorization.k8s.io/v1
+   kind: RoleBinding
+   metadata:
+     name: monitoring-view
+     namespace: production
+   subjects:
+   - kind: Group
+     name: monitoring-team
+     apiGroup: rbac.authorization.k8s.io
+   roleRef:
+     kind: ClusterRole
+     name: view
+     apiGroup: rbac.authorization.k8s.io
+   ```
+
+#### Best Practices for ClusterRole Usage
+
+1. **Default Role Assignment**
+   - Use `view` for read-only access
+   - Use `edit` for developer access
+   - Use `admin` for namespace owners
+   - Restrict `cluster-admin` to minimal users
+
+2. **Aggregation Rules**
+   ```yaml
+   apiVersion: rbac.authorization.k8s.io/v1
+   kind: ClusterRole
+   metadata:
+     name: monitoring
+     labels:
+       rbac.authorization.k8s.io/aggregate-to-view: "true"
+   rules:
+   - apiGroups: ["monitoring.coreos.com"]
+     resources: ["servicemonitors"]
+     verbs: ["get", "list", "watch"]
+   ```
+
+3. **Security Guidelines**
+   - Avoid direct cluster-admin assignments
+   - Use namespace-scoped roles when possible
+   - Regularly audit ClusterRole bindings
+   - Document custom ClusterRole creation
 
 ### 3. ABAC (Attribute-Based Access Control)
 ```json
