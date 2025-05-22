@@ -46,3 +46,7 @@ One place to for everything about Kubernetes.
   - [02 - Authentication](/docs/06%20-%20Security/02-Authentication.md)
   - [03 - Authorization](/docs/06%20-%20Security/03-Authorization.md)
   - [04 - SSL CERT](/docs/06%20-%20Security/04-SSL%20Cert.md)
+  - [05 - Disaster Recovery](/docs/06%20-%20Security/05-Disaster%20Recovery.md)
+  - [06 - Infrastructure Security](/docs/06%20-%20Security/06-Infrastructure%20Security.md)
+  - [07 - Secret Management](/docs/06%20-%20Security/07-Secret%20Management.md)
+  - [08 - Security Proxy](/docs/06%20-%20Security/08-Security%20Proxy.md)
