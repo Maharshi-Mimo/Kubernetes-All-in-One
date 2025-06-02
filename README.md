@@ -41,6 +41,8 @@ One place to for everything about Kubernetes.
   - [03 - PersistentVolume](/docs/05%20-%20Storage/03-PersistentVolume.md)
   - [04 - PersistentVolumeClaim](/docs/05%20-%20Storage/02-PersistentVolumeClaim.md)
   - [05 - StorageClass](/docs/05%20-%20Storage/05-StorageClass.md)
+  - [06 - VolumeExpansion](/docs/05%20-%20Storage/06-VolumeExpansion.md)
+  - [07 - VolumeCloning](/docs/05%20-%20Storage/07-VolumeCloning.md)
 - [06 - Security](/docs/06%20-%20Security/)
   - [01 - Kubernetes Security](/docs/06%20-%20Security/01-kubernetes-security.md)
   - [02 - Authentication](/docs/06%20-%20Security/02-Authentication.md)
