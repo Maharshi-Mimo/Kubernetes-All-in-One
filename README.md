@@ -43,6 +43,8 @@ One place to for everything about Kubernetes.
   - [05 - StorageClass](/docs/05%20-%20Storage/05-StorageClass.md)
   - [06 - VolumeExpansion](/docs/05%20-%20Storage/06-VolumeExpansion.md)
   - [07 - VolumeCloning](/docs/05%20-%20Storage/07-VolumeCloning.md)
+  - [08 - VolumeSnapshots](/docs/05%20-%20Storage/08-VolumeSnapshots.md)
+  - [09 - CrossPlatformStorage](/docs/05%20-%20Storage/09-CrossPlatformStorage.md)
 - [06 - Security](/docs/06%20-%20Security/)
   - [01 - Kubernetes Security](/docs/06%20-%20Security/01-kubernetes-security.md)
   - [02 - Authentication](/docs/06%20-%20Security/02-Authentication.md)
@@ -52,3 +54,5 @@ One place to for everything about Kubernetes.
   - [06 - Infrastructure Security](/docs/06%20-%20Security/06-Infrastructure%20Security.md)
   - [07 - Secret Management](/docs/06%20-%20Security/07-Secret%20Management.md)
   - [08 - Security Proxy](/docs/06%20-%20Security/08-Security%20Proxy.md)
+
+[def]: /docs/05%20-%20Storage/09-CrossPlatformStorage.md
