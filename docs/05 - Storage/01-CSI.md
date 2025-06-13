@@ -3,6 +3,9 @@
 ## Overview
 Container Storage Interface (CSI) is a standard for exposing arbitrary block and file storage systems to containerized workloads in Kubernetes. Since its introduction in Kubernetes v1.13, CSI has become the recommended way to integrate storage systems with Kubernetes.
 
+
+![Container Storage Interface](/images/CSI.png)
+
 ## Pre-CSI Storage Handling
 
 Before CSI was introduced (prior to Kubernetes v1.13), storage management was handled through:
