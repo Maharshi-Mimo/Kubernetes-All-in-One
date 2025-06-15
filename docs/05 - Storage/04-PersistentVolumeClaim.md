@@ -10,6 +10,35 @@ A PersistentVolumeClaim (PVC) is a request for storage by a user in Kubernetes. 
 - **Storage Classes**: PVCs can specify a storage class to use for dynamic provisioning.
 - **Resource Management**: PVCs allow for resource quotas and limits to be applied to storage.
 
+## PVC Lifecycle
+
+![Persistent Volume](/images/architecture-volumemount.webp)
+
+The lifecycle of a PersistentVolumeClaim goes through several stages:
+
+1. **Provisioning**
+   - **Static**: Administrator creates PVs that are available for use
+   - **Dynamic**: PVs are automatically created when PVC is created based on StorageClass
+
+2. **Binding**
+   - PVC is matched and bound to a specific PV
+   - The binding is exclusive and one-to-one
+   - PVC remains unbound until a suitable PV is available
+
+3. **Using**
+   - Pods use the PVC as a volume
+   - As long as a Pod is using the PVC, the PV cannot be deleted
+   - This protection is called "Storage Object in Use Protection"
+
+4. **Releasing**
+   - When a PVC is deleted, the PV enters the "Released" phase
+   - The volume is no longer bound to the PVC but is not yet available for another PVC
+
+5. **Reclaiming**
+   - The PV can be reclaimed based on its reclaim policy:
+     - Retain: Manual reclamation required
+     - Delete: PV and underlying storage are automatically deleted
+     - Recycle: Basic scrub (rm -rf) is performed (deprecated)
 
 Here is an example of a PVC manifest:
 
