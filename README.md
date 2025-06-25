@@ -35,6 +35,7 @@ One place to for everything about Kubernetes.
     - [06 - NodePort](/docs/04%20-%20Network%20&%20Services/06-NodePort.md)
     - [07 - ExternalName](/docs/04%20-%20Network%20&%20Services/07-ExternalName.md)
     - [08 - NetworkPolicies](/docs/04%20-%20Network%20&%20Services/08-NetworkPolicies.md)
+    - [09 - EndPointSlice](/docs/04%20-%20Network%20&%20Services/09-EndpointSlices.md)
 - [05 - Storage](/docs/05%20-%20Storage/)
   - [01 - CSI](/docs/05%20-%20Storage/01-CSI.md)
   - [02 - Volumes](/docs/05%20-%20Storage/01-Volumes.md)
