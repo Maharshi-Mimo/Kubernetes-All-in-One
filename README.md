@@ -26,6 +26,7 @@ One place to for everything about Kubernetes.
   - [05 - Daemonset](/docs/03%20-%20Resources/05-DaemonSet.md)
   - [06 - LimitRange & ResourceQuota](/docs/03%20-%20Resources/06-LimitRange_&_ResourceQuota.md)
   - [07 - CronJobs](/docs/03%20-%20Resources/07-CronJobs.md)
+  - [08 - ConfigMap](/docs/03%20-%20Resources/08-ConfigMap.md)
 - [04 - Network & Services](/docs/04%20-%20Network%20&%20Services/)
     - [01 - CNI](/docs/04%20-%20Network%20&%20Services/01-CNI.md)
     - [02 - CoreDNS](/docs/04%20-%20Network%20&%20Services/02-CoreDNS.md)
