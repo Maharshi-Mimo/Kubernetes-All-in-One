@@ -28,6 +28,7 @@ One place to for everything about Kubernetes.
   - [07 - CronJobs](/docs/03%20-%20Resources/07-CronJobs.md)
   - [08 - ConfigMap](/docs/03%20-%20Resources/08-ConfigMap.md)
   - [09 - HPA](/docs/03%20-%20Resources/09-HPA.md)
+  - [10 - Namespace](/docs/03%20-%20Resources/10-Namespace.md)
 - [04 - Network & Services](/docs/04%20-%20Network%20&%20Services/)
     - [01 - CNI](/docs/04%20-%20Network%20&%20Services/01-CNI.md)
     - [02 - CoreDNS](/docs/04%20-%20Network%20&%20Services/02-CoreDNS.md)
