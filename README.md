@@ -50,6 +50,7 @@ One place to for everything about Kubernetes.
   - [08 - VolumeSnapshots](/docs/05%20-%20Storage/08-VolumeSnapshots.md)
   - [09 - CrossPlatformStorage](/docs/05%20-%20Storage/09-CrossPlatformStorage.md)
   - [10 - Storage Capacity Planning](/docs/05%20-%20Storage/10-StorageCapacity.md)
+  - [11 - Ephemeral Storage](/docs/05%20-%20Storage/11-Ephemral_Storage.md)
 - [06 - Security](/docs/06%20-%20Security/)
   - [01 - Kubernetes Security](/docs/06%20-%20Security/01-kubernetes-security.md)
   - [02 - Authentication](/docs/06%20-%20Security/02-Authentication.md)
