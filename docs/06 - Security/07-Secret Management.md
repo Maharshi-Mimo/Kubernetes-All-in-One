@@ -74,6 +74,24 @@ spec:
       secretName: mysecret
 ```
 
+
+# Example Secret Encryption Configuration
+```yaml
+apiVersion: apiserver.config.k8s.io/v1
+kind: EncryptionConfiguration
+metadata:
+  name: encryption-config
+resources:
+  - resources:
+    - secrets
+    providers:
+    - aescbc:
+        keys:
+        - name: key1
+          secret: <base64-encoded-key>
+    - identity: {}
+```
+
 ## Best Practices
 
 1. **Encryption**: Enable encryption at rest for Secrets
