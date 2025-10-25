@@ -61,5 +61,7 @@ One place to for everything about Kubernetes.
   - [07 - Secret Management](/docs/06%20-%20Security/07-Secret%20Management.md)
   - [08 - Security Proxy](/docs/06%20-%20Security/08-Security%20Proxy.md)
   - [09 - Admission Controller](/docs/06%20-%20Security/09-Admission_Controller.md)
+  - [10 - Compliance and Audit](/docs/06%20-%20Security/10-Compliance_and_Audit.md)
+  
 
 [def]: /docs/05%20-%20Storage/09-CrossPlatformStorage.md
