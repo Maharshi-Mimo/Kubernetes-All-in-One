@@ -18,6 +18,7 @@ One place to for everything about Kubernetes.
   - [09-CRI](/docs/02%20-%20Core%20Concepts/09-Container-Runtime-Interface)
   - [10-Nodes](/docs/02%20-%20Core%20Concepts/10-Nodes.md)
   - [11-KubeConfig](/docs/02%20-%20Core%20Concepts/11-KubeConfig.md)
+  - [12-Cloud-Controller-Manager](/docs/02%20-%20Core%20Concepts/12-Cloud-Controller-Manager.md)
 - [03 - Resouces](/docs/03%20-%20Resources/)
   - [01 - Pod ](/docs/03%20-%20Resources/01-Pod.md)
   - [02 - ReplicaSet ](/docs/03%20-%20Resources/02-ReplicaSet.md)
