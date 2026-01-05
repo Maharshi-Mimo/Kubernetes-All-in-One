@@ -64,6 +64,3 @@ One place to for everything about Kubernetes.
   - [09 - Admission Controller](/docs/06%20-%20Security/09-Admission_Controller.md)
   - [10 - Compliance and Audit](/docs/06%20-%20Security/10-Compliance_and_Audit.md)
   - [11 - Supply Chain Security](/docs/06%20-%20Security/11-Supply-Chain-Security.md)
-  
-
-[def]: /docs/05%20-%20Storage/09-CrossPlatformStorage.md
