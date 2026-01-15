@@ -6,7 +6,7 @@
 
 ## Key Attributes of the Clusters 
 
-- **Node** : A node is a worker machine in Kubernetes, that takes care of the workload for a particular application(s). Each node is maintained by Controlplane and has components like Kubelet, Container Runtime Interface(CRI) and Kubeproxy. 
+- [**Node**](/docs/02%20-%20Core%20Concepts/10-Nodes.md) : A node is a worker machine in Kubernetes, that takes care of the workload for a particular application(s). Each node is maintained by Controlplane and has components like Kubelet, Container Runtime Interface(CRI) and Kubeproxy. 
 
 - **Kubelet** : This is the primary "node agent" that runs on each node. The kubelet works in terms of PodSpec (a yaml or json object that describes a pod)
 
