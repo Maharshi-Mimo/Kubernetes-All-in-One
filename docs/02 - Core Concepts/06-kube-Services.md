@@ -13,7 +13,7 @@
 
 Kubernetes Service types allow you to specify what kind of Service you want. The available types and their behaviors are:
 
-- *ClusterIP*:
+- [**ClusterIP**](/docs/04%20-%20Network%20%26%20Services/02-ClusterIP.md):
   - Exposes the Service on a cluster-internal IP.
   - Makes the Service reachable only within the cluster.
   - Default type if not specified.
