@@ -20,9 +20,9 @@ Kubernetes Service types allow you to specify what kind of Service you want. The
   - Can be exposed to the public internet using an Ingress or Gateway. 
   ![ClusterIP](<../../images/kubernetes _clusterip.webp>)
 
-- *NodePort*:
+- [**NodePort**](/docs/04%20-%20Network%20%26%20Services/06-NodePort.md)
   - Exposes the Service on each Node's IP at a static port (the NodePort).
-  - Sets up a cluster IP address similar to ClusterIP.
+  - Sets up a cluster IP address Kubernetes-All-in-One/blob/main/docs/04%20-%20Network%20%26%20Services/06-NodePort.mdsimilar to ClusterIP.
   ![Node Port](../../images/kubernetes_nodeport.webp)
 
 - *LoadBalancer*:
