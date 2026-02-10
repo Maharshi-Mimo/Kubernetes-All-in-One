@@ -25,7 +25,7 @@ Kubernetes Service types allow you to specify what kind of Service you want. The
   - Sets up a cluster IP address similar to ClusterIP.
   ![Node Port](../../images/kubernetes_nodeport.webp)
 
-- *LoadBalancer*:
+- [**LoadBalancer**](/docs/04%20-%20Network%20%26%20Services/04-LoadBalancer.md):
   - Exposes the Service externally using an external load balancer.
   - Requires an external load balancer or integration with a cloud provider.
   ![LoadBalancer](../../images/kubernetes_loadbalancer.webp)
