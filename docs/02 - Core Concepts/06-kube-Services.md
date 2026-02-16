@@ -30,7 +30,7 @@ Kubernetes Service types allow you to specify what kind of Service you want. The
   - Requires an external load balancer or integration with a cloud provider.
   ![LoadBalancer](../../images/kubernetes_loadbalancer.webp)
 
-- *ExternalName*:
+- [**ExternalName**](/docs/04%20-%20Network%20%26%20Services/07-ExternalName.md)
   - Maps the Service to the contents of the externalName field (e.g., hostname api.foo.bar.example).
   - Configures the cluster's DNS server to return a CNAME record with the external hostname value.
   - No proxying is set up.
