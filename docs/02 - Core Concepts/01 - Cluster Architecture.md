@@ -10,7 +10,7 @@
 
 - [**Kubelet**](/docs/02%20-%20Core%20Concepts/07-Kubelet.md) : This is the primary "node agent" that runs on each node. The kubelet works in terms of PodSpec (a yaml or json object that describes a pod)
 
-- **kube-proxy** : The kubernetes network proxy runs on each node. This reflects services as defined in the Kubernetes API on each node and can do simple TCP, UDP, and SCTP stream forwarding or round-robin TCP, UDP, and SCTP forwarding across a set of backends. Services can be of many flavors: ClusterIP and NodePort
+- [**kube-proxy**](/docs/02%20-%20Core%20Concepts/08-Kube-Proxy.md) : The kubernetes network proxy runs on each node. This reflects services as defined in the Kubernetes API on each node and can do simple TCP, UDP, and SCTP stream forwarding or round-robin TCP, UDP, and SCTP forwarding across a set of backends. Services can be of many flavors: ClusterIP and NodePort
 
 - **Controlplane** : Container orchestration layer that exposes the API and interfaces to define, deploy, and manage the lifecycle of containers. 
 It contains 
