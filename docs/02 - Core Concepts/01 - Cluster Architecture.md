@@ -2,7 +2,7 @@
 
 - We will start with Cluster Architecture
 
-![Kubernetes Cluster Architecture](/images/kubernetes-cluster-architecture.svg)
+![Kubernetes Cluster Architecture](../../images/kubernetes-cluster-architecture.svg)
 
 ## Key Attributes of the Clusters 
 
@@ -22,7 +22,7 @@ It contains
 
 ## Kubernetes Components 
 
-![Kubernetes Components](images/components-of-kubernetes.svg)
+![Kubernetes Components](../../images/components-of-kubernetes.svg)
 
 ### Core Component 
 
