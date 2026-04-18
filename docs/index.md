@@ -1,4 +1,4 @@
-# Kubernetes All-in-One
+# Kubernetes
 
 One place for everything about Kubernetes.
 
