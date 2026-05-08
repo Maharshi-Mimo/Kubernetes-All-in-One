@@ -33,7 +33,7 @@ ETCD is a distributed, reliable, and highly available key-value store that serve
 - Easy integration with applications
 - Language-agnostic clients available
 
-![Simple Interface](/images/interface.svg)
+![Simple Interface](../images/interface.svg)
 
 ### 2. **Key-Value Storage** 
 - Data stored in hierarchically organized directories, like a filesystem
@@ -41,7 +41,7 @@ ETCD is a distributed, reliable, and highly available key-value store that serve
 - Support for binary keys and values
 - Efficient prefix searches
 
-![Key Value storage](/images/Key_value_strorage.svg)
+![Key Value storage](../images/Key_value_strorage.svg)
 
 ### 3. **Watch for Changes**
 - Watch specific keys or directories for changes
@@ -49,7 +49,7 @@ ETCD is a distributed, reliable, and highly available key-value store that serve
 - Enables event-driven architecture
 - Long-polling and gRPC streaming support
 
-![Watch for Changes](/images/watch.svg)
+![Watch for Changes](../images/watch.svg)
 
 ### 4. **Distributed & Reliable**
 - Replicates data across multiple machines

@@ -11,7 +11,7 @@ kube-scheduler selects a node for the pod in a 2-step operation:
 1. Filtering
 2. Scoring
 
-  ![kube-scheduler1](/images/scheduling-framework-extensions.png)
+  ![kube-scheduler1](../images/scheduling-framework-extensions.png)
 
 
 ## Install kube-scheduler - Manual
