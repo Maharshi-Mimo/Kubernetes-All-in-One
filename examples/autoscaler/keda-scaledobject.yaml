@@ -1,0 +1,51 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: example-scaledobject
+  namespace: default
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: example-deployment
+  pollingInterval: 30
+  cooldownPeriod: 300
+  minReplicaCount: 1
+  maxReplicaCount: 20
+  fallback:
+    failureThreshold: 3
+    replicas: 3
+  triggers:
+    # CPU trigger
+    - type: cpu
+      metricType: Utilization
+      metadata:
+        value: "70"
+    # Prometheus trigger example
+    - type: prometheus
+      metadata:
+        serverAddress: http://prometheus-server.monitoring.svc.cluster.local
+        metricName: http_requests_total
+        query: sum(rate(http_requests_total{service="example"}[2m]))
+        threshold: "100"
+    # Kafka trigger example
+    - type: kafka
+      metadata:
+        bootstrapServers: kafka.default.svc.cluster.local:9092
+        consumerGroup: example-consumer-group
+        topic: example-topic
+        lagThreshold: "50"
+---
+apiVersion: keda.sh/v1alpha1
+kind: TriggerAuthentication
+metadata:
+  name: keda-trigger-auth
+  namespace: default
+spec:
+  secretTargetRef:
+    - parameter: username
+      name: keda-secret
+      key: username
+    - parameter: password
+      name: keda-secret
+      key: password
