@@ -6,13 +6,13 @@
 
 ## Key Attributes of the Clusters 
 
-- [**Node**](/docs/02%20-%20Core%20Concepts/10-Nodes.md) : A node is a worker machine in Kubernetes, that takes care of the workload for a particular application(s). Each node is maintained by Controlplane and has components like Kubelet, Container Runtime Interface(CRI) and Kubeproxy. 
+- [**Node**](13-Nodes.md) : A node is a worker machine in Kubernetes, that takes care of the workload for a particular application(s). Each node is maintained by Controlplane and has components like Kubelet, Container Runtime Interface(CRI) and Kubeproxy. 
 
-- [**Kubelet**](/docs/02%20-%20Core%20Concepts/07-Kubelet.md) : This is the primary "node agent" that runs on each node. The kubelet works in terms of PodSpec (a yaml or json object that describes a pod)
+- [**Kubelet**](07-Kubelet.md) : This is the primary "node agent" that runs on each node. The kubelet works in terms of PodSpec (a yaml or json object that describes a pod)
 
-- [**kube-proxy**](/docs/02%20-%20Core%20Concepts/08-Kube-Proxy.md) : The kubernetes network proxy runs on each node. This reflects services as defined in the Kubernetes API on each node and can do simple TCP, UDP, and SCTP stream forwarding or round-robin TCP, UDP, and SCTP forwarding across a set of backends. Services can be of many flavors: ClusterIP and NodePort
+- [**kube-proxy**](08-Kube-Proxy.md) : The kubernetes network proxy runs on each node. This reflects services as defined in the Kubernetes API on each node and can do simple TCP, UDP, and SCTP stream forwarding or round-robin TCP, UDP, and SCTP forwarding across a set of backends. Services can be of many flavors: ClusterIP and NodePort
 
-- [**Controlplane**](/docs/02%20-%20Core%20Concepts/03-Kubernetes-Controlplane.md) : Container orchestration layer that exposes the API and interfaces to define, deploy, and manage the lifecycle of containers. 
+- [**Controlplane**](03-Kubernetes-Controlplane.md) : Container orchestration layer that exposes the API and interfaces to define, deploy, and manage the lifecycle of containers. 
 It contains 
   - etcd 
   - API server
@@ -27,18 +27,18 @@ It contains
 ### Core Component 
 
 - Controlplane Components - manages overall state of the cluster
-  - [Kube-apiserver](/docs/02%20-%20Core%20Concepts/02-Kube-API-Server.md) 
-  - [etcd](/docs/02%20-%20Core%20Concepts/03-ETCD-server.md)
-  - [kube-scheduler](/docs/02%20-%20Core%20Concepts/04-Kube-Scheduler.md)
-  - [kube-controller-manager](/docs/02%20-%20Core%20Concepts/05-Kube-Controller-Manager.md)
-  - [cloud-controller-manager](/docs/02%20-%20Core%20Concepts/)
+  - [Kube-apiserver](02-Kube-API-Server.md) 
+  - [etcd](04-ETCD-server.md)
+  - [kube-scheduler](05-Kube-Scheduler.md)
+  - [kube-controller-manager](14-Kube-Controller-Manager.md)
+  - [cloud-controller-manager](12-Cloud-Controller-Manager.md)
 
 ### Node Components 
-- [Kubelet](/docs/02%20-%20Core%20Concepts/07-Kubelet.md)
-- [Kube-proxy](/docs/02%20-%20Core%20Concepts/) 
-- [Container Runtime](/docs/02%20-%20Core%20Concepts/)
+- [Kubelet](07-Kubelet.md)
+- [Kube-proxy](08-Kube-Proxy.md) 
+- [Container Runtime](09-Container-Runtime-Interface.md)
 
 ### Addons 
-- [DNS](/docs/02%20-%20Core%20Concepts/)
-- [Container Resource Monitoring](/docs/02%20-%20Core%20Concepts/)
-- [Cluster-level Logging](/docs/02%20-%20Core%20Concepts/)
+- DNS
+- Container Resource Monitoring
+- Cluster-level Logging
